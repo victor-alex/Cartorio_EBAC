@@ -19,7 +19,8 @@ int main() //"INT" Função responsavel por
 	    printf("Escolha a opção desejada: \n\n");
 	    printf("\t1- Cadastro de nomes\n");
 	    printf("\t2- Consulta de nomes\n");
-	    printf("\t3- Deletar nomes\n");
+	    printf("\t3- Deletar nomes\n\n");
+	    printf("\t4- Sair do sistema\n\n");
 	    printf("Opção: "); // fim do menu
 	
 	    scanf("%d", &opcao); //armazena a escolha do usuario
@@ -38,6 +39,11 @@ int main() //"INT" Função responsavel por
 	    	
 	    	case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0; //retorna ao valor 0, quebrando laço, função, etc, e sai do sistema
 			break;
 	    		
 	    	default:
